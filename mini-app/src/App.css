@@ -1,0 +1,252 @@
+body{
+  background: linear-gradient(to bottom, #191b33, #1b202d);
+  background-color: #191b33;
+  color: #fff;
+  height: var(--tg-viewport-stable-height);
+  touch-action: none; /* Prevent touch actions */
+}
+
+.cards__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.taskhead{
+  background: linear-gradient(to bottom, #191b33, #1b202d);
+}
+.heading{
+  text-align: center;
+}
+
+.image-container {
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.wobble-image {
+  width: 300px;
+  transition: transform .2s;
+  filter: grayscale(.1);
+}
+
+@keyframes wobble-top {
+  0%,
+  100% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+}
+
+@keyframes wobble-bottom {
+  0%,
+  100% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(20deg);
+  }
+}
+
+@keyframes wobble-left {
+  0%,
+  100% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(-20deg);
+  }
+}
+
+@keyframes wobble-right {
+  0%,
+  100% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(20deg);
+  }
+}
+
+.wobble-top {
+  animation: wobble-top .2s ease;
+}
+
+.wobble-bottom {
+  animation: wobble-bottom .2s ease;
+}
+
+.wobble-left {
+  animation: wobble-left .2s ease;
+}
+
+.wobble-right {
+  animation: wobble-right .2s ease;
+}
+
+.tapguru{
+    font-size: 16px;
+}
+.tapguru{
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 350px) {
+
+  .tapguru{
+    font-size: 12px;
+  }
+  .tapguru2{
+    font-size: 10px;
+}
+
+
+}
+
+.spinner {
+  width: 160px;
+  height: 160px;
+  position: fixed;
+  border-radius: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.spin1{
+
+  width: 140px;
+  border: 10px solid #383568;
+  height: 140px;
+  position: relative;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 1.8s linear infinite;
+}
+
+.spin2{
+
+  border: 10px solid #383568;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-color: transparent;
+  border-radius: 50%;
+  border-left-color: #8580cf;
+
+}
+
+.spin3{
+
+  border: 10px solid #383568;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-color: transparent;
+  border-radius: 50%;
+  border-right-color: orange;
+  rotate: 70deg;
+  z-index: 10;
+
+}
+
+.spin4{
+
+  border: 10px solid #383568;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-color: transparent;
+  border-radius: 50%;
+  border-right-color: orange;
+  rotate: 70deg;
+  z-index: 10;
+
+}
+
+.spin5{
+
+  border: 10px solid #383568;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-color: transparent;
+  border-radius: 50%;
+  border-top-color: #383568;
+  rotate: 218deg;
+  z-index: 20;
+
+}
+
+.spin6{
+
+  border: 10px solid #383568;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-color: transparent;
+  border-radius: 50%;
+  border-top-color: #8580cf;
+  rotate: 275deg;
+  z-index: 20;
+
+}
+
+.spin7{
+
+  border: 10px solid #383568;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-color: transparent;
+  border-radius: 50%;
+  border-top-color: #bcb4a7;
+  rotate: 32deg;
+  z-index: 30;
+}
+
+.spin8{
+
+  border: 10px solid #383568;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-color: transparent;
+  border-radius: 50%;
+  border-top-color: #373568;
+  rotate: -28deg;
+  z-index: 30;
+
+}
+
+.spin9{
+
+  border: 10px solid #383568;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-color: transparent;
+  border-radius: 50%;
+  border-top-color: #373568;
+  rotate: 41deg;
+  z-index: 25;
+
+}
+
+.taskbg{
+  background: linear-gradient(to bottom, #191b33, #1b202d);
+  background-color: #191b33;
+  color: #fff;
+  height: var(--tg-viewport-stable-height);
+  touch-action: none; /* Prevent touch actions */
+}
+
+
